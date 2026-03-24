@@ -1,0 +1,383 @@
+ 
+    /* ESTILO GENERAL */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #222;
+    }
+ 
+    /* BARRA DE NAVEGACIÓN */
+    .barra-navegacion {
+      background: #1a1a1a;
+      display: flex;
+      align-items: center;
+      padding: 0 30px;
+      height: 54px;
+    }
+ 
+    .barra-logo {
+      color: #d4a017;
+      font-weight: bold;
+      font-size: 1rem;
+      text-decoration: none;
+      margin-right: 20px;
+      padding-right: 20px;
+      border-right: 1px solid #444;
+    }
+ 
+    .barra-menu {
+      list-style: none;
+      display: flex;
+      gap: 6px;
+      margin: 0;
+      padding: 0;
+    }
+ 
+    .barra-menu a {
+      color: #bbb;
+      text-decoration: none;
+      padding: 6px 14px;
+      font-size: .87rem;
+      border-radius: 3px;
+    }
+ 
+    .barra-menu a:hover { background: #333; color: #fff; }
+ 
+ 
+    /* PORTADA */
+    .portada {
+      background:
+        linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.70)),
+        url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Over_the_top_film.jpg/1280px-Over_the_top_film.jpg') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      padding: 0 60px;
+    }
+ 
+    .portada-texto { max-width: 580px; }
+ 
+    .portada-texto h1 {
+      font-size: 2.6rem;
+      color: #fff;
+      margin-bottom: 14px;
+    }
+ 
+    .portada-texto h1 em { color: #f0cc6a; font-style: italic; }
+ 
+    .portada-texto p {
+      color: #ddd;
+      font-size: .96rem;
+      line-height: 1.7;
+      margin-bottom: 22px;
+    }
+ 
+    .boton-portada {
+      display: inline-block;
+      background: #8b3a1a;
+      color: #fff;
+      padding: 11px 28px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: .88rem;
+      font-weight: bold;
+    }
+ 
+    .boton-portada:hover { background: #6e2d12; }
+ 
+ 
+    /* SECCIÓN DE BIENVENIDA */
+    .seccion-bienvenida {
+      background: #eeeeee;
+      padding: 46px 60px;
+      border-bottom: 1px solid #ccc;
+    }
+ 
+    .seccion-bienvenida h2 {
+      font-size: 1.9rem;
+      margin-bottom: 12px;
+    }
+ 
+    .seccion-bienvenida p {
+      font-size: .96rem;
+      color: #555;
+      line-height: 1.75;
+      max-width: 720px;
+      margin-bottom: 22px;
+    }
+ 
+    .boton-bienvenida {
+      display: inline-block;
+      background: #8b3a1a;
+      color: #fff;
+      padding: 11px 26px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: .88rem;
+      font-weight: bold;
+    }
+ 
+    .boton-bienvenida:hover { background: #6e2d12; }
+ 
+ 
+    /* GALERÍA DE IMÁGENES */
+    .seccion-galeria {
+      background: #1a1a1a;
+      padding: 50px 36px;
+    }
+ 
+    .galeria-titulo {
+      color: #d4a017;
+      text-align: center;
+      font-size: .78rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+ 
+    .galeria-cuadricula {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      max-width: 1060px;
+      margin: 0 auto;
+    }
+ 
+    .galeria-tarjeta {
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+ 
+    .galeria-tarjeta img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+ 
+    .galeria-tarjeta-contenido {
+      padding: 14px 16px 16px;
+      border-top: 2px solid #d4a017;
+    }
+ 
+    .galeria-tarjeta-fecha {
+      display: block;
+      font-size: .68rem;
+      color: #d4a017;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+ 
+    .galeria-tarjeta-titulo {
+      color: #fff;
+      font-size: .98rem;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+ 
+    .galeria-tarjeta-descripcion {
+      color: #999;
+      font-size: .83rem;
+      line-height: 1.6;
+    }
+ 
+ 
+    /* ENCABEZADO DE SISTEMAS POLÍTICOS */
+    .encabezado-sistemas {
+      text-align: center;
+      padding: 46px 20px 10px;
+      background: #f4f4f4;
+    }
+ 
+    .encabezado-sistemas .texto-categoria {
+      display: block;
+      font-size: .72rem;
+      letter-spacing: .18em;
+      color: #8b3a1a;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+ 
+    .encabezado-sistemas h2 { font-size: 1.9rem; }
+ 
+    .linea-decorativa {
+      text-align: center;
+      color: #d4a017;
+      margin: 12px 0 30px;
+      font-size: 1rem;
+      background: #f4f4f4;
+    }
+ 
+ 
+    /* TARJETAS DE SISTEMAS POLÍTICOS */
+    .seccion-sistemas {
+      background: #f4f4f4;
+      padding: 0 36px 56px;
+    }
+ 
+    .fila-tarjetas {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1060px;
+      margin: 0 auto;
+    }
+ 
+    .tarjeta {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-top: 3px solid #8b3a1a;
+      border-radius: 3px;
+      padding: 28px 22px 24px;
+      text-align: center;
+    }
+ 
+    .tarjeta-imagen-circular {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #d4a017;
+      margin: 0 auto 16px;
+      background: #f0e8d0;
+    }
+ 
+    .tarjeta-imagen-circular img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+ 
+    .tarjeta h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #1a1a1a;
+    }
+ 
+    .tarjeta p {
+      font-size: .9rem;
+      color: #666;
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+ 
+    .boton-tarjeta {
+      display: inline-block;
+      border: 1px solid #8b3a1a;
+      color: #8b3a1a;
+      padding: 7px 20px;
+      text-decoration: none;
+      font-size: .83rem;
+      border-radius: 3px;
+    }
+ 
+    .boton-tarjeta:hover { background: #8b3a1a; color: #fff; }
+ 
+ 
+    /* CITA */
+    .seccion-cita {
+      background: #f0e8d0;
+      text-align: center;
+      padding: 54px 40px;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+    }
+ 
+    .seccion-cita blockquote {
+      font-size: 1.7rem;
+      font-style: italic;
+      color: #1a1a1a;
+      max-width: 650px;
+      margin: 0 auto 12px;
+    }
+ 
+    .seccion-cita cite {
+      font-size: .8rem;
+      color: #7a6550;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+    }
+ 
+ 
+    /* BIBLIOGRAFÍA */
+    .seccion-bibliografia {
+      background: #fff;
+      padding: 36px 60px;
+      border-top: 1px solid #ddd;
+    }
+ 
+    .bibliografia-titulo {
+      font-size: 1.2rem;
+      color: #1a1a1a;
+      margin-bottom: 16px;
+    }
+ 
+    .bibliografia-lista {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+ 
+    .bibliografia-lista li {
+      font-size: .92rem;
+      color: #555;
+      line-height: 1.6;
+      padding-left: 16px;
+      border-left: 3px solid #d4a017;
+    }
+ 
+    .bibliografia-lista li em { color: #222; }
+ 
+ 
+    /* PIE DE PÁGINA */
+    .pie-de-pagina {
+      background: #1a1a1a;
+      border-top: 2px solid #d4a017;
+      padding: 22px 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+ 
+    .pie-nombre-sitio {
+      color: #d4a017;
+      font-weight: bold;
+      font-size: .9rem;
+    }
+ 
+    .pie-enlaces {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      margin: 0;
+      padding: 0;
+    }
+ 
+    .pie-enlaces a {
+      color: #777;
+      text-decoration: none;
+      font-size: .83rem;
+    }
+ 
+    .pie-enlaces a:hover { color: #d4a017; }
+ 
+    .pie-copyright { color: #777; font-size: .83rem; }
+ 
+ 
+    /* PANTALLAS PEQUEÑAS */
+    @media (max-width: 720px) {
+      .galeria-cuadricula,
+      .fila-tarjetas       { grid-template-columns: 1fr; }
+      .portada             { padding: 0 24px; height: auto; padding-top: 60px; padding-bottom: 60px; }
+      .seccion-bienvenida  { padding: 36px 24px; }
+    }
